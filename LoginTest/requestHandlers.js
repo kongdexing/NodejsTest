@@ -48,7 +48,7 @@ function sum(response,requestData){
 	var b = parseInt(requestData.b);
 
 	response.writeHead(200,{"Content-Type":"text/plain"});
-	response.write((a+b).toString()+'');
+	response.write((a+b).toString());
 	response.end();
 }
 
