@@ -44,11 +44,11 @@ function login(request,requestData){
 }
 
 function sum(response,requestData){
-	var a = requestData.a;
-	var b = requestData.b;
+	var a = parseInt(requestData.a);
+	var b = parseInt(requestData.b);
 
 	response.writeHead(200,{"Content-Type":"text/plain"});
-	response.write(parseInt(a)+parseInt(b));
+	response.write((a+b).toString()+'');
 	response.end();
 }
 
